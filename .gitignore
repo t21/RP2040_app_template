@@ -1,3 +1,9 @@
+# Build folder
+build/
+
+# Exclude compile_commands.json if copied to root
+compile_commands.json
+
 # Prerequisites
 *.d
 

@@ -1,0 +1,6 @@
+{
+    "cmake.environment": {
+        "PICO_SDK_PATH": "${workspaceFolder}/external/pico-sdk"
+    },
+    "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json"
+}

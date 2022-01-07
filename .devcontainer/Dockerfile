@@ -1,5 +1,5 @@
 # Download base image
-FROM ubuntu:20.04
+FROM ubuntu:21.10
 
 # Install additional OS packages.
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
@@ -7,6 +7,8 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     build-essential \
     cmake \
     gcc-arm-none-eabi \
+    git \
     libnewlib-arm-none-eabi \
     libstdc++-arm-none-eabi-newlib \
-    ninja-build
+    ninja-build \
+    python3

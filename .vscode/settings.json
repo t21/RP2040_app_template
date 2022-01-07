@@ -1,6 +1,10 @@
 {
+    "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
     "cmake.environment": {
         "PICO_SDK_PATH": "${workspaceFolder}/external/pico-sdk"
     },
-    "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json"
+    "editor.rulers": [
+        140
+    ],
+    "editor.tabSize": 2
 }

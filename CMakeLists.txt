@@ -9,16 +9,15 @@ project(App-Template)
 pico_sdk_init()
 
 # User defined includes
-# TODO: Add the suitable ones
-# include(cmake/project-functions.cmake)
-# include(cmake/CompilerWarnings.cmake)
+include(cmake/project-functions.cmake)
 
 # Add apps
 add_subdirectory(${CMAKE_SOURCE_DIR}/apps/template)
 
 # Add modules
 # add_subdirectory(${CMAKE_SOURCE_DIR}/external/etl ${CMAKE_CURRENT_BINARY_DIR}/external/etl EXCLUDE_FROM_ALL)
-# add_subdirectory(${CMAKE_SOURCE_DIR}/external/SEGGER_RTT_V752a ${CMAKE_CURRENT_BINARY_DIR}/external/SEGGER_RTT_V752a EXCLUDE_FROM_ALL)
+add_subdirectory(${CMAKE_SOURCE_DIR}/src/SEGGER_RTT_V752a EXCLUDE_FROM_ALL)
+add_subdirectory(${CMAKE_SOURCE_DIR}/src/logger EXCLUDE_FROM_ALL)
 
 # Print build info
 message(STATUS "****************************************************")

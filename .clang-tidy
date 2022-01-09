@@ -1,0 +1,93 @@
+Checks: '*,
+  -clang-diagnostic-unused-command-line-argument,
+  -cppcoreguidelines-pro-bounds-array-to-pointer-decay,
+  -cppcoreguidelines-pro-bounds-constant-array-index,
+  -cppcoreguidelines-pro-type-const-cast,
+  -cppcoreguidelines-pro-type-reinterpret-cast,
+  -cppcoreguidelines-pro-type-static-cast-downcast,
+  -cppcoreguidelines-pro-type-union-access,
+  -cppcoreguidelines-pro-type-vararg,
+  -fuchsia-overloaded-operator,
+  -fuchsia-default-arguments,
+  #-google-readability-todo,
+  -hicpp-vararg,
+  -hicpp-no-assembler,
+  -hicpp-no-array-decay,
+  -llvm-include-order,
+  #-modernize-loop-convert,
+  -modernize-redundant-void-arg,
+  #-modernize-use-using,
+  -modernize-use-trailing-return-type,
+  -readability-avoid-const-params-in-decls,
+  #-readability-inconsistent-declaration-parameter-name,
+  -readability-simplify-boolean-expr,
+  -readability-uppercase-literal-suffix,
+  # Maybe add from BES3   -google-runtime-references,   -modernize-use-nodiscard,
+  # Test comment
+  -cert-*,
+  -fuchsia-*,
+  -llvmlibc-*'
+CheckOptions:
+  - { key: readability-identifier-naming.StructCase,          value: CamelCase  }
+  - { key: readability-identifier-naming.FunctionCase,        value: lower_case }
+  - { key: readability-identifier-naming.VariableCase,        value: lower_case }
+  - { key: readability-identifier-naming.GlobalConstantCase,  value: UPPER_CASE }
+
+  - { key: readability-identifier-naming.NamespaceCase, value: lower_case }
+  - { key: readability-identifier-naming.InlineNamespaceCase, value: lower_case }
+
+  - { key: readability-identifier-naming.ClassCase, value: CamelCase }
+
+  - { key: readability-identifier-naming.PublicMemberCase, value: camelBack }
+
+  - { key: readability-identifier-naming.PrivateMemberCase, value: camelBack }
+  - { key: readability-identifier-naming.PrivateMemberPrefix, value: _ }
+  - { key: readability-identifier-naming.ProtectedMemberCase, value: camelBack }
+  - { key: readability-identifier-naming.ProtectedMemberPrefix, value: _ }
+
+  - { key: readability-identifier-naming.ClassConstantCase, value: camelBack }
+
+  - { key: readability-identifier-naming.ClassMethodCase, value: camelBack }
+  - { key: readability-identifier-naming.PrivateMethodCase, value: camelBack }
+  - { key: readability-identifier-naming.ProtectedMethodCase, value: camelBack }
+  - { key: readability-identifier-naming.PublicMethodCase, value: camelBack }
+  - { key: readability-identifier-naming.MethodCase, value: camelBack }
+
+  - { key: readability-identifier-naming.LocalConstantCase, value: camelBack }
+  - { key: readability-identifier-naming.LocalVariableCase, value: camelBack }
+  - { key: readability-identifier-naming.StaticConstantCase, value: camelBack }
+  - { key: readability-identifier-naming.StaticVariableCase, value: camelBack }
+
+  - { key: readability-identifier-naming.MacroDefinitionCase, value: UPPER_CASE }
+
+  - { key: readability-identifier-naming.ParameterCase, value: camelBack }
+  - { key: readability-identifier-naming.ParameterPackCase, value: camelBack }
+  - { key: readability-identifier-naming.PointerParameterCase, value: camelBack }
+
+  - { key: readability-identifier-naming.ValueTemplateParameterCase, value: camelBack }
+
+  - { key: readability-identifier-naming.TypeTemplateParameterCase, value: CamelCase }
+  - { key: readability-identifier-naming.TemplateTemplateParameterCase, value: CamelCase }
+
+  - { key: readability-identifier-naming.TypedefCase, value: camelBack }
+  - { key: readability-identifier-naming.TypedefSuffix, value: _t }
+
+  - { key: readability-identifier-naming.TypeAliasCase, value: CamelCase }
+
+
+  - { key: readability-identifier-naming.StructCase, value: CamelCase }
+
+  - { key: readability-identifier-naming.EnumCase, value: CamelCase }
+  - { key: readability-identifier-naming.EnumConstantCase, value: CamelCase }
+
+  - { key: readability-identifier-naming.GlobalConstantCase, value: camelBack }
+  - { key: readability-identifier-naming.GlobalVariableCase, value: camelBack }
+
+  - { key: readability-identifier-naming.GlobalFunctionCase, value: camelBack }
+  - { key: readability-identifier-naming.ConstexprFunctionCase, value: camelBack }
+  - { key: readability-identifier-naming.Function, value: camelBack }
+
+  - { key: performance-unnecessary-value-param.AllowedTypes, value: array_view }
+
+  - { key: modernize-use-override.IgnoreDestructors, value: 1 }
+  - { key: hicpp-use-override.IgnoreDestructors, value: 1 }

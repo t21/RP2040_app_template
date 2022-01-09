@@ -7,10 +7,12 @@
 #include "pico/printf.h"
 #include "pico/stdlib.h"
 
-int main(void) {
-  stdio_init_all();
+#include "logger/Log.hpp"
 
-  printf("Template application started\r\n");
+int main(void) {
+  // stdio_init_all();
+
+  LOG_D("Template application started\r\n");
 
   while (true) {
   }

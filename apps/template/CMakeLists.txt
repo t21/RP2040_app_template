@@ -27,4 +27,5 @@ target_include_directories(${APP_NAME}
 target_link_libraries(${APP_NAME}
   PRIVATE
     pico_stdlib
+    logger
 )

@@ -5,7 +5,6 @@ FROM ubuntu:20.04
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends \
     build-essential \
-    clangd \
     cmake \
     gcc-arm-none-eabi \
     git \

@@ -6,7 +6,9 @@ compile_commands.json
 
 # Exclude clangd index files
 .cache
-.clangd
+
+# Exclude Ozone user files
+*.jdebug.user
 
 # Exclude Mac junk files
 .DS_Store

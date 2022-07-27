@@ -4,16 +4,17 @@
  * Copyright (c) 2021 Thomas Berg
  */
 
-#include "pico/printf.h"
-#include "pico/stdlib.h"
+#include "pico/time.h"
 
 #include "logger/Log.hpp"
 
-int main(void) {
-  // stdio_init_all();
-
+int main() {
   LOG_D("Template application started\r\n");
 
   while (true) {
+    LOG_D("Template application running\r\n");
+    sleep_ms(1000);
   }
+
+  return 0;
 }

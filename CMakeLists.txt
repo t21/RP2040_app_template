@@ -13,6 +13,7 @@ include(cmake/project-functions.cmake)
 
 # Add apps
 add_subdirectory(${CMAKE_SOURCE_DIR}/apps/template)
+add_subdirectory(${CMAKE_SOURCE_DIR}/apps/blinky)
 
 # Add modules
 # add_subdirectory(${CMAKE_SOURCE_DIR}/external/etl ${CMAKE_CURRENT_BINARY_DIR}/external/etl EXCLUDE_FROM_ALL)

@@ -5,7 +5,8 @@ build/
 compile_commands.json
 
 # Exclude clangd index files
-.cache/
+.cache
+.clangd
 
 # Exclude Mac junk files
 .DS_Store

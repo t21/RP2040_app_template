@@ -1,5 +1,5 @@
 # Download base image
-FROM ubuntu:21.10
+FROM ubuntu:20.04
 
 # Install additional OS packages.
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \

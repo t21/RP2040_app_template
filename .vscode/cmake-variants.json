@@ -1,20 +1,24 @@
 {
     "buildVariant": {
-        "default": "RP2040_board",
-        "description": "Hardware or Unittests",
+        "default": "RP2040",
+        "description": "RP2040 Hardware or Unittests",
         "choices": {
-            "RP2040_board": {
+            "RP2040": {
                 "short": "RP2040",
-                "long": "RP2040 board",
+                "long": "RP2040",
                 "settings": {
-                    "PICO_PLATFORM": "rp2040"
+                    "PICO_PLATFORM": "rp2040",
+                    "BUILD_TARGET": true,
+                    "BUILD_TEST": false
                 }
             },
             "unittest": {
                 "short": "Unittest",
                 "long": "Unit test",
                 "settings": {
-                    "PICO_PLATFORM": "host"
+                    "PICO_PLATFORM": "host",
+                    "BUILD_TARGET": false,
+                    "BUILD_TEST": true
                 }
             }
         }

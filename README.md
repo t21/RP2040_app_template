@@ -1,15 +1,28 @@
-# RP2040_app_template
+# RP2040 application template
 
 ## Clone and setup
-Clone repository
-git clone ...
 
-Initialize submodules
+### Clone repository
+
+```
+git clone <name of repository>
+```
+
+### Initialize submodules
+
+```
+cd <name of project folder>
+git submodule update --init
+```
+```
 cd external/pico-sdk
 git submodule update --init
 cd -
+```
 
+### Set project name and configure picosystem
 
+Name project in CMakeLists.txt.
 
 ## Installed packages
 

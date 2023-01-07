@@ -3,6 +3,9 @@ cmake_minimum_required(VERSION 3.16)
 # Set your project name here
 set(PROJECT_NAME App-Template)
 
+# # User defined includes
+include(cmake/project-functions.cmake)
+
 # Include pico-sdk base cmake file
 include(external/pico-sdk/external/pico_sdk_import.cmake)
 

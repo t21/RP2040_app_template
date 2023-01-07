@@ -6,13 +6,13 @@
 
 #include "pico/time.h"
 
-// #include "logger/Log.hpp"
+#include "logger/Log.hpp"
 
 int main() {
-  // LOG_D("Template application started\r\n");
+  LOG_D("Template application started\r\n");
 
   while (true) {
-    // LOG_D("Template application running\r\n");
+    LOG_D("Template application running\r\n");
     sleep_ms(1000);
   }
 

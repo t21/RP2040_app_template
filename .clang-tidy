@@ -1,4 +1,5 @@
 Checks: '*,
+  -modernize-use-trailing-return-type,
   -altera-*,
   -cert-*,
   -fuchsia-*,

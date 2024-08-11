@@ -1,10 +1,28 @@
 Checks: '*,
+  -clang-diagnostic-unused-command-line-argument,
+  -cppcoreguidelines-pro-bounds-array-to-pointer-decay,
+  -cppcoreguidelines-pro-bounds-constant-array-index,
+  -cppcoreguidelines-pro-type-const-cast,
+  -cppcoreguidelines-pro-type-reinterpret-cast,
+  -cppcoreguidelines-pro-type-static-cast-downcast,
+  -cppcoreguidelines-pro-type-union-access,
+  -cppcoreguidelines-pro-type-vararg,
+  #-google-readability-todo,
+  -hicpp-vararg,
+  -hicpp-no-assembler,
+  -hicpp-no-array-decay,
+  -llvm-include-order,
+  #-modernize-loop-convert,
+  -modernize-redundant-void-arg,
+  #-modernize-use-using,
   -modernize-use-trailing-return-type,
-  -altera-*,
+  -readability-avoid-const-params-in-decls,
+  #-readability-inconsistent-declaration-parameter-name,
+  -readability-simplify-boolean-expr,
+  -readability-uppercase-literal-suffix,
   -cert-*,
   -fuchsia-*,
-  -llvmlibc-*
-'
+  -llvmlibc-*'
 CheckOptions:
   - { key: readability-identifier-naming.StructCase,          value: CamelCase  }
   - { key: readability-identifier-naming.FunctionCase,        value: lower_case }

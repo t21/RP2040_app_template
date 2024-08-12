@@ -6,6 +6,10 @@
 		"dockerfile": "Dockerfile"
 	},
 
+	"runArgs": ["--network=host", "--device=/dev/tty.usbmodem14401"],
+
+	"privileged": true,
+
 	// Set *default* container specific settings.json values on container create.
 	"settings": {},
 
